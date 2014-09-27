@@ -11,6 +11,8 @@
 
 @interface APTableViewController ()
 
+@property (strong, nonatomic) NSArray *instruments;
+
 @end
 
 @implementation APTableViewController
@@ -18,10 +20,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
+    self.instruments = @[@"Güiro", @"Palitos", @"Requinto", @"Seguidor", @"Tumbador"];
     
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     self.connect = [[UIBarButtonItem alloc] initWithTitle:@"Connect" style:UIBarButtonItemStylePlain target:self action:@selector(didTapConnect:)];
     self.navigationItem.rightBarButtonItem = self.connect;
     self.navigationItem.title = @"AirParranda";
@@ -37,22 +37,20 @@
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Potentially incomplete method implementation.
     // Return the number of sections.
     return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete method implementation.
     // Return the number of rows in the section.
-    return 1;
+    return [self.instruments count];
 }
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"APTableViewCell" forIndexPath:indexPath];
     
-    cell.textLabel.text = @"Güiro";
+    cell.textLabel.text = self.instruments[indexPath.row];
     
     return cell;
 }
