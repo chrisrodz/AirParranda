@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  APTableViewController.h
 //  AirParranda
 //
 //  Created by Christian A. Rodriguez on 9/27/14.
@@ -8,8 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface APTableViewController : UITableViewController
 
+@property (strong, nonatomic) UIBarButtonItem *connect;
 
 @end
-

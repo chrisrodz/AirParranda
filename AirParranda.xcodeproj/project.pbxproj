@@ -9,11 +9,14 @@
 /* Begin PBXBuildFile section */
 		23BA6E2119D75BDB003300FB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 23BA6E2019D75BDB003300FB /* main.m */; };
 		23BA6E2419D75BDB003300FB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 23BA6E2319D75BDB003300FB /* AppDelegate.m */; };
-		23BA6E2719D75BDB003300FB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23BA6E2619D75BDB003300FB /* ViewController.m */; };
-		23BA6E2A19D75BDB003300FB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23BA6E2819D75BDB003300FB /* Main.storyboard */; };
 		23BA6E2C19D75BDB003300FB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23BA6E2B19D75BDB003300FB /* Images.xcassets */; };
 		23BA6E2F19D75BDB003300FB /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23BA6E2D19D75BDB003300FB /* LaunchScreen.xib */; };
 		23BA6E3B19D75BDB003300FB /* AirParrandaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 23BA6E3A19D75BDB003300FB /* AirParrandaTests.m */; };
+		23BA6E4519D75EE6003300FB /* MyoKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23BA6E4419D75EE6003300FB /* MyoKit.framework */; };
+		23BA6E4719D75F15003300FB /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23BA6E4619D75F15003300FB /* CoreBluetooth.framework */; };
+		23BA6E4919D75F1E003300FB /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23BA6E4819D75F1E003300FB /* SystemConfiguration.framework */; };
+		23BA6E4F19D76BE5003300FB /* APTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23BA6E4D19D76BE5003300FB /* APTableViewController.m */; };
+		23BA6E5019D76BE5003300FB /* APTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23BA6E4E19D76BE5003300FB /* APTableViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,14 +35,17 @@
 		23BA6E2019D75BDB003300FB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		23BA6E2219D75BDB003300FB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		23BA6E2319D75BDB003300FB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		23BA6E2519D75BDB003300FB /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		23BA6E2619D75BDB003300FB /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		23BA6E2919D75BDB003300FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		23BA6E2B19D75BDB003300FB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		23BA6E2E19D75BDB003300FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		23BA6E3419D75BDB003300FB /* AirParrandaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AirParrandaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		23BA6E3919D75BDB003300FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		23BA6E3A19D75BDB003300FB /* AirParrandaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AirParrandaTests.m; sourceTree = "<group>"; };
+		23BA6E4419D75EE6003300FB /* MyoKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MyoKit.framework; sourceTree = "<group>"; };
+		23BA6E4619D75F15003300FB /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		23BA6E4819D75F1E003300FB /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		23BA6E4C19D76BE5003300FB /* APTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = APTableViewController.h; path = ../APTableViewController.h; sourceTree = "<group>"; };
+		23BA6E4D19D76BE5003300FB /* APTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = APTableViewController.m; path = ../APTableViewController.m; sourceTree = "<group>"; };
+		23BA6E4E19D76BE5003300FB /* APTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = APTableViewController.xib; path = ../APTableViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +53,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23BA6E4919D75F1E003300FB /* SystemConfiguration.framework in Frameworks */,
+				23BA6E4719D75F15003300FB /* CoreBluetooth.framework in Frameworks */,
+				23BA6E4519D75EE6003300FB /* MyoKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +72,9 @@
 		23BA6E1219D75BDB003300FB = {
 			isa = PBXGroup;
 			children = (
+				23BA6E4819D75F1E003300FB /* SystemConfiguration.framework */,
+				23BA6E4619D75F15003300FB /* CoreBluetooth.framework */,
+				23BA6E4419D75EE6003300FB /* MyoKit.framework */,
 				23BA6E1D19D75BDB003300FB /* AirParranda */,
 				23BA6E3719D75BDB003300FB /* AirParrandaTests */,
 				23BA6E1C19D75BDB003300FB /* Products */,
@@ -81,11 +93,11 @@
 		23BA6E1D19D75BDB003300FB /* AirParranda */ = {
 			isa = PBXGroup;
 			children = (
+				23BA6E4C19D76BE5003300FB /* APTableViewController.h */,
+				23BA6E4D19D76BE5003300FB /* APTableViewController.m */,
+				23BA6E4E19D76BE5003300FB /* APTableViewController.xib */,
 				23BA6E2219D75BDB003300FB /* AppDelegate.h */,
 				23BA6E2319D75BDB003300FB /* AppDelegate.m */,
-				23BA6E2519D75BDB003300FB /* ViewController.h */,
-				23BA6E2619D75BDB003300FB /* ViewController.m */,
-				23BA6E2819D75BDB003300FB /* Main.storyboard */,
 				23BA6E2B19D75BDB003300FB /* Images.xcassets */,
 				23BA6E2D19D75BDB003300FB /* LaunchScreen.xib */,
 				23BA6E1E19D75BDB003300FB /* Supporting Files */,
@@ -199,7 +211,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				23BA6E2A19D75BDB003300FB /* Main.storyboard in Resources */,
+				23BA6E5019D76BE5003300FB /* APTableViewController.xib in Resources */,
 				23BA6E2F19D75BDB003300FB /* LaunchScreen.xib in Resources */,
 				23BA6E2C19D75BDB003300FB /* Images.xcassets in Resources */,
 			);
@@ -219,7 +231,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				23BA6E2719D75BDB003300FB /* ViewController.m in Sources */,
+				23BA6E4F19D76BE5003300FB /* APTableViewController.m in Sources */,
 				23BA6E2419D75BDB003300FB /* AppDelegate.m in Sources */,
 				23BA6E2119D75BDB003300FB /* main.m in Sources */,
 			);
@@ -244,14 +256,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		23BA6E2819D75BDB003300FB /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				23BA6E2919D75BDB003300FB /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		23BA6E2D19D75BDB003300FB /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -343,6 +347,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = AirParranda/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -353,6 +361,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = AirParranda/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
