@@ -22,6 +22,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     self.instrumentName.text = self.name;
+
     
     // Posted when a new accelerometer event is available from a TLMMyo. Notifications are posted at a rate of 50 Hz.
     [[NSNotificationCenter defaultCenter] addObserver:self

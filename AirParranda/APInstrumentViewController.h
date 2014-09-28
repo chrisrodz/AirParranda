@@ -13,5 +13,6 @@
 @property (strong, nonatomic) IBOutlet UILabel *instrumentName;
 
 @property (strong, nonatomic) NSString *name;
+@property (weak, nonatomic) IBOutlet UILabel *instrument;
 
 @end
