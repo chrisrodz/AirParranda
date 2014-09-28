@@ -12,7 +12,7 @@
 
 @interface APInstrumentViewController ()
 
-@property (assign) SystemSoundID pewPewSound;
+@property (assign) SystemSoundID parrandaSound;
 
 @end
 
@@ -40,6 +40,10 @@
 //                                             selector:@selector(didReceiveOrientationEvent:)
 //                                                 name:TLMMyoDidReceiveOrientationEventNotification
 //                                               object:nil];
+    NSString *parrandaPath = [[NSBundle mainBundle]
+                              pathForResource:self.name ofType:@"caf"];
+    NSURL *parrandaURL = [NSURL fileURLWithPath:parrandaPath];
+    AudioServicesCreateSystemSoundID((__bridge CFURLRef)parrandaURL, &_parrandaSound);
     
 }
 
@@ -58,33 +62,9 @@
     // Calculate the magnitude of the acceleration vector.
     float magnitude = GLKVector3Length(accelerationVector);
     
-    if (magnitude > 2.0) {
+    if (magnitude > 1.3) {
+        AudioServicesPlaySystemSound(self.parrandaSound);
         NSLog(@"%f", magnitude);
-        if ([self.instrumentName.text  isEqual: @"Güiro"]) {
-            NSLog(@"Play güiro");
-            NSString *pewPewPath = [[NSBundle mainBundle]
-                                    pathForResource:@"hola" ofType:@"caf"];
-            NSURL *pewPewURL = [NSURL fileURLWithPath:pewPewPath];
-            AudioServicesCreateSystemSoundID((__bridge CFURLRef)pewPewURL, &_pewPewSound);
-            AudioServicesPlaySystemSound(self.pewPewSound);
-        } else if ([self.instrumentName.text  isEqual: @"Palitos"]) {
-            //play sound
-            NSLog(@"Play palitos");
-        } else if ([self.instrumentName.text  isEqual: @"Maracas"]) {
-            //play sound
-            NSLog(@"Play maracas");
-        } else if ([self.instrumentName.text  isEqual: @"Requinto"]) {
-            //play sound
-            NSLog(@"Play requinto");
-        } else if ([self.instrumentName.text  isEqual: @"Seguidor"]) {
-            //play sound
-            NSLog(@"Play seguidor");
-        } else if ([self.instrumentName.text  isEqual: @"Tumbador"]) {
-            //play sound
-            NSLog(@"Play tumbador");
-        } else {
-            NSLog(@"Lo jodiste");
-        }
     }
 }
 
