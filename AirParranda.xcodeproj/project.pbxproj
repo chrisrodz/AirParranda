@@ -274,6 +274,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0A90546219D7CA5D00172417 /* banjo.png in Resources */,
+				23BA6E5B19D7D246003300FB /* hola.caf in Resources */,
 				23BA6E5519D7A22C003300FB /* APInstrumentViewController.xib in Resources */,
 				0A90546419D7CA5D00172417 /* guiro.png in Resources */,
 				0A90546519D7CA5D00172417 /* maracas.png in Resources */,
