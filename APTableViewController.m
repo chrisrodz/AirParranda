@@ -8,6 +8,7 @@
 
 #import "APTableViewController.h"
 #import <MyoKit/MyoKit.h>
+#import "APInstrumentViewController.h"
 
 @interface APTableViewController ()
 
@@ -20,7 +21,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.instruments = @[@"Güiro", @"Palitos", @"Requinto", @"Seguidor", @"Tumbador"];
+    self.instruments = @[@"Güiro", @"Palitos", @"Maracas", @"Requinto", @"Seguidor", @"Tumbador"];
     
     self.connect = [[UIBarButtonItem alloc] initWithTitle:@"Connect" style:UIBarButtonItemStylePlain target:self action:@selector(didTapConnect:)];
     self.navigationItem.rightBarButtonItem = self.connect;
@@ -61,7 +62,10 @@
 
 // In a xib-based application, navigation from a table can be handled in -tableView:didSelectRowAtIndexPath:
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    NSLog(@"Selected");
+    APInstrumentViewController *ivc = [[APInstrumentViewController alloc] init];
+    
+    ivc.name = self.instruments[indexPath.row];
+    [self.navigationController pushViewController:ivc animated:YES];
 }
 
 
