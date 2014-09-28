@@ -30,7 +30,7 @@
     
     APInstrumentViewController *ivc = [[APInstrumentViewController alloc] init];
     
-    ivc.name = @"requinto";
+    ivc.name = @"Requinto1";
     UIImage *image = [UIImage imageNamed:@"requinto.png"];
     UIImageView *imageView = [[UIImageView alloc] initWithImage:image];
     [imageView setFrame:CGRectMake(100, 200, 100, 100)];
@@ -41,7 +41,7 @@
 - (IBAction)palitos:(id)sender {
     APInstrumentViewController *ivc = [[APInstrumentViewController alloc] init];
     
-    ivc.name = @"palitos";
+    ivc.name = @"Palitos";
     [ivc.instrument setText:@"palitos"];
     UIImage *image = [UIImage imageNamed:@"palitos.png"];
     UIImageView *imageView = [[UIImageView alloc] initWithImage:image];
@@ -53,7 +53,7 @@
 - (IBAction)maracas:(id)sender {
     APInstrumentViewController *ivc = [[APInstrumentViewController alloc] init];
     
-    ivc.name = @"maracas";
+    ivc.name = @"Maracas";
     UIImage *image = [UIImage imageNamed:@"maracas.png"];
     UIImageView *imageView = [[UIImageView alloc] initWithImage:image];
     [imageView setFrame:CGRectMake(100, 200, 100, 100)];
@@ -63,7 +63,7 @@
 - (IBAction)guiro:(id)sender {
     APInstrumentViewController *ivc = [[APInstrumentViewController alloc] init];
     
-    ivc.name = @"guiro";
+    ivc.name = @"Güiro";
     UIImage *image = [UIImage imageNamed:@"guiro.png"];
     UIImageView *imageView = [[UIImageView alloc] initWithImage:image];
     [imageView setFrame:CGRectMake(100, 200, 100, 100)];
@@ -73,7 +73,7 @@
 - (IBAction)servidor:(id)sender {
     APInstrumentViewController *ivc = [[APInstrumentViewController alloc] init];
     
-    ivc.name = @"servidor";
+    ivc.name = @"Seguidor";
     UIImage *image = [UIImage imageNamed:@"seguidor.png"];
     UIImageView *imageView = [[UIImageView alloc] initWithImage:image];
     [imageView setFrame:CGRectMake(100, 200, 100, 100)];
@@ -83,7 +83,7 @@
 - (IBAction)tumbador:(id)sender {
     APInstrumentViewController *ivc = [[APInstrumentViewController alloc] init];
     
-    ivc.name = @"tumbador";
+    ivc.name = @"Tumbador";
     UIImage *image = [UIImage imageNamed:@"tumbador.png"];
     UIImageView *imageView = [[UIImageView alloc] initWithImage:image];
     [imageView setFrame:CGRectMake(100, 200, 100, 100)];

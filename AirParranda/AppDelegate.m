@@ -8,7 +8,6 @@
 
 #import "AppDelegate.h"
 #import <MyoKit/MyoKit.h>
-#import "APTableViewController.h"
 #import "ViewController.h"
 
 @interface AppDelegate ()

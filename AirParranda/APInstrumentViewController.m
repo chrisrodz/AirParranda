@@ -63,9 +63,36 @@
     // Calculate the magnitude of the acceleration vector.
     float magnitude = GLKVector3Length(accelerationVector);
     
-    if (magnitude > 1.3) {
-        AudioServicesPlaySystemSound(self.parrandaSound);
-        NSLog(@"%f", magnitude);
+    if ([self.name isEqual:@"Palitos"]) {
+        if (magnitude > 1.1) {
+            AudioServicesPlaySystemSound(self.parrandaSound);
+            NSLog(@"%f", magnitude);
+        }
+    } else if ([self.name isEqual:@"Güiro"]) {
+        if (magnitude > 1.3) {
+            AudioServicesPlaySystemSound(self.parrandaSound);
+            NSLog(@"%f", magnitude);
+        }
+    } else if ([self.name isEqual:@"Maracas"]) {
+        if (magnitude > 1.2) {
+            AudioServicesPlaySystemSound(self.parrandaSound);
+            NSLog(@"%f", magnitude);
+        }
+    } else if ([self.name isEqual:@"Tumbador"]) {
+        if (magnitude > 1.4) {
+            AudioServicesPlaySystemSound(self.parrandaSound);
+            NSLog(@"%f", magnitude);
+        }
+    } else if ([self.name isEqual:@"Seguidor"]) {
+        if (magnitude > 1.4) {
+            AudioServicesPlaySystemSound(self.parrandaSound);
+            NSLog(@"%f", magnitude);
+        }
+    } else if ([self.name isEqual:@"Requinto1"]) {
+        if (magnitude > 1.4) {
+            AudioServicesPlaySystemSound(self.parrandaSound);
+            NSLog(@"%f", magnitude);
+        }
     }
 }
 
