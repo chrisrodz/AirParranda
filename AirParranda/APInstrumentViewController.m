@@ -8,8 +8,11 @@
 
 #import "APInstrumentViewController.h"
 #import <MyoKit/MyoKit.h>
+@import AudioToolbox;
 
 @interface APInstrumentViewController ()
+
+@property (assign) SystemSoundID pewPewSound;
 
 @end
 
@@ -33,6 +36,10 @@
                                              selector:@selector(didReceivePoseChange:)
                                                  name:TLMMyoDidReceivePoseChangedNotification
                                                object:nil];
+//    [[NSNotificationCenter defaultCenter] addObserver:self
+//                                             selector:@selector(didReceiveOrientationEvent:)
+//                                                 name:TLMMyoDidReceiveOrientationEventNotification
+//                                               object:nil];
     
 }
 
@@ -53,6 +60,31 @@
     
     if (magnitude > 2.0) {
         NSLog(@"%f", magnitude);
+        if ([self.instrumentName.text  isEqual: @"Güiro"]) {
+            NSLog(@"Play güiro");
+            NSString *pewPewPath = [[NSBundle mainBundle]
+                                    pathForResource:@"hola" ofType:@"caf"];
+            NSURL *pewPewURL = [NSURL fileURLWithPath:pewPewPath];
+            AudioServicesCreateSystemSoundID((__bridge CFURLRef)pewPewURL, &_pewPewSound);
+            AudioServicesPlaySystemSound(self.pewPewSound);
+        } else if ([self.instrumentName.text  isEqual: @"Palitos"]) {
+            //play sound
+            NSLog(@"Play palitos");
+        } else if ([self.instrumentName.text  isEqual: @"Maracas"]) {
+            //play sound
+            NSLog(@"Play maracas");
+        } else if ([self.instrumentName.text  isEqual: @"Requinto"]) {
+            //play sound
+            NSLog(@"Play requinto");
+        } else if ([self.instrumentName.text  isEqual: @"Seguidor"]) {
+            //play sound
+            NSLog(@"Play seguidor");
+        } else if ([self.instrumentName.text  isEqual: @"Tumbador"]) {
+            //play sound
+            NSLog(@"Play tumbador");
+        } else {
+            NSLog(@"Lo jodiste");
+        }
     }
 }
 
@@ -89,5 +121,11 @@
             break;
     }
 }
+
+//- (void)didReceiveOrientationEvent:(NSNotification *)notification {
+//    TLMOrientationEvent *orientationEvent = notification.userInfo[kTLMKeyOrientationEvent];
+//    float a = GLKQuaternionAngle(orientationEvent.quaternion);
+//    NSLog(@"%f", a);
+//}
 
 @end
