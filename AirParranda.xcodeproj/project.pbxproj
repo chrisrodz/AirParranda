@@ -30,6 +30,7 @@
 		23BA6E5019D76BE5003300FB /* APTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23BA6E4E19D76BE5003300FB /* APTableViewController.xib */; };
 		23BA6E5419D7A22C003300FB /* APInstrumentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23BA6E5219D7A22C003300FB /* APInstrumentViewController.m */; };
 		23BA6E5519D7A22C003300FB /* APInstrumentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23BA6E5319D7A22C003300FB /* APInstrumentViewController.xib */; };
+		23BA6E5B19D7D246003300FB /* hola.caf in Resources */ = {isa = PBXBuildFile; fileRef = 23BA6E5A19D7D246003300FB /* hola.caf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +75,7 @@
 		23BA6E5119D7A22C003300FB /* APInstrumentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APInstrumentViewController.h; sourceTree = "<group>"; };
 		23BA6E5219D7A22C003300FB /* APInstrumentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APInstrumentViewController.m; sourceTree = "<group>"; };
 		23BA6E5319D7A22C003300FB /* APInstrumentViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = APInstrumentViewController.xib; sourceTree = "<group>"; };
+		23BA6E5A19D7D246003300FB /* hola.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = hola.caf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +139,7 @@
 		23BA6E1D19D75BDB003300FB /* AirParranda */ = {
 			isa = PBXGroup;
 			children = (
+				23BA6E5719D7CD3C003300FB /* Sonidos */,
 				23BA6E4C19D76BE5003300FB /* APTableViewController.h */,
 				0A90545519D7B27D00172417 /* ViewController.m */,
 				0A90545619D7B27D00172417 /* ViewController.xib */,
@@ -180,6 +183,14 @@
 				23BA6E3919D75BDB003300FB /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		23BA6E5719D7CD3C003300FB /* Sonidos */ = {
+			isa = PBXGroup;
+			children = (
+				23BA6E5A19D7D246003300FB /* hola.caf */,
+			);
+			name = Sonidos;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
