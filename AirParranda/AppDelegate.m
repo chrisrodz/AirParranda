@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import <MyoKit/MyoKit.h>
 #import "APTableViewController.h"
+#import "ViewController.h"
 
 @interface AppDelegate ()
 
@@ -23,11 +24,44 @@
     [TLMHub sharedHub];
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    UINavigationController *nc = [[UINavigationController alloc] initWithRootViewController:[[APTableViewController alloc] init]];
+    UINavigationController *nc = [[UINavigationController alloc] initWithRootViewController:[[ViewController alloc] init]];
+    UIColor *color = [self getUIColorObjectFromHexString:@"206691" alpha:0.9];
+    [nc.navigationBar setBarTintColor:color];
     self.window.rootViewController = nc;
     [self.window makeKeyAndVisible];
     
     return YES;
+}
+
+- (unsigned int)intFromHexString:(NSString *)hexStr
+{
+    unsigned int hexInt = 0;
+    
+    // Create scanner
+    NSScanner *scanner = [NSScanner scannerWithString:hexStr];
+    
+    // Tell scanner to skip the # character
+    [scanner setCharactersToBeSkipped:[NSCharacterSet characterSetWithCharactersInString:@"#"]];
+    
+    // Scan hex value
+    [scanner scanHexInt:&hexInt];
+    
+    return hexInt;
+}
+
+- (UIColor *)getUIColorObjectFromHexString:(NSString *)hexStr alpha:(CGFloat)alpha
+{
+    // Convert hex string to an integer
+    unsigned int hexint = [self intFromHexString:hexStr];
+    
+    // Create color object, specifying alpha as well
+    UIColor *color =
+    [UIColor colorWithRed:((CGFloat) ((hexint & 0xFF0000) >> 16))/255
+                    green:((CGFloat) ((hexint & 0xFF00) >> 8))/255
+                     blue:((CGFloat) (hexint & 0xFF))/255
+                    alpha:alpha];
+    
+    return color;
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {

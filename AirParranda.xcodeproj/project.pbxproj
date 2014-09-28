@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A90545719D7B27D00172417 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A90545519D7B27D00172417 /* ViewController.m */; };
+		0A90545819D7B27D00172417 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A90545619D7B27D00172417 /* ViewController.xib */; };
+		0A90546219D7CA5D00172417 /* banjo.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A90545919D7CA5D00172417 /* banjo.png */; };
+		0A90546319D7CA5D00172417 /* campana.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A90545A19D7CA5D00172417 /* campana.png */; };
+		0A90546419D7CA5D00172417 /* guiro.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A90545B19D7CA5D00172417 /* guiro.png */; };
+		0A90546519D7CA5D00172417 /* maracas.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A90545C19D7CA5D00172417 /* maracas.png */; };
+		0A90546619D7CA5D00172417 /* palitos.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A90545D19D7CA5D00172417 /* palitos.png */; };
+		0A90546719D7CA5D00172417 /* redoble.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A90545E19D7CA5D00172417 /* redoble.png */; };
+		0A90546819D7CA5D00172417 /* requinto.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A90545F19D7CA5D00172417 /* requinto.png */; };
+		0A90546919D7CA5D00172417 /* seguidor.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A90546019D7CA5D00172417 /* seguidor.png */; };
+		0A90546A19D7CA5D00172417 /* tumbador.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A90546119D7CA5D00172417 /* tumbador.png */; };
 		23BA6E2119D75BDB003300FB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 23BA6E2019D75BDB003300FB /* main.m */; };
 		23BA6E2419D75BDB003300FB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 23BA6E2319D75BDB003300FB /* AppDelegate.m */; };
 		23BA6E2C19D75BDB003300FB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23BA6E2B19D75BDB003300FB /* Images.xcassets */; };
@@ -39,6 +50,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0A90545419D7B27C00172417 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		0A90545519D7B27D00172417 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		0A90545619D7B27D00172417 /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
+		0A90545919D7CA5D00172417 /* banjo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = banjo.png; path = ../../../Downloads/imgages/banjo.png; sourceTree = "<group>"; };
+		0A90545A19D7CA5D00172417 /* campana.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = campana.png; path = ../../../Downloads/imgages/campana.png; sourceTree = "<group>"; };
+		0A90545B19D7CA5D00172417 /* guiro.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = guiro.png; path = ../../../Downloads/imgages/guiro.png; sourceTree = "<group>"; };
+		0A90545C19D7CA5D00172417 /* maracas.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = maracas.png; path = ../../../Downloads/imgages/maracas.png; sourceTree = "<group>"; };
+		0A90545D19D7CA5D00172417 /* palitos.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = palitos.png; path = ../../../Downloads/imgages/palitos.png; sourceTree = "<group>"; };
+		0A90545E19D7CA5D00172417 /* redoble.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = redoble.png; path = ../../../Downloads/imgages/redoble.png; sourceTree = "<group>"; };
+		0A90545F19D7CA5D00172417 /* requinto.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = requinto.png; path = ../../../Downloads/imgages/requinto.png; sourceTree = "<group>"; };
+		0A90546019D7CA5D00172417 /* seguidor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = seguidor.png; path = ../../../Downloads/imgages/seguidor.png; sourceTree = "<group>"; };
+		0A90546119D7CA5D00172417 /* tumbador.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = tumbador.png; path = ../../../Downloads/imgages/tumbador.png; sourceTree = "<group>"; };
 		23BA6E1B19D75BDB003300FB /* AirParranda.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AirParranda.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		23BA6E1F19D75BDB003300FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		23BA6E2019D75BDB003300FB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -88,6 +111,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0A90544C19D7AC7C00172417 /* imgs */ = {
+			isa = PBXGroup;
+			children = (
+				0A90545919D7CA5D00172417 /* banjo.png */,
+				0A90545A19D7CA5D00172417 /* campana.png */,
+				0A90545B19D7CA5D00172417 /* guiro.png */,
+				0A90545C19D7CA5D00172417 /* maracas.png */,
+				0A90545D19D7CA5D00172417 /* palitos.png */,
+				0A90545E19D7CA5D00172417 /* redoble.png */,
+				0A90545F19D7CA5D00172417 /* requinto.png */,
+				0A90546019D7CA5D00172417 /* seguidor.png */,
+				0A90546119D7CA5D00172417 /* tumbador.png */,
+			);
+			name = imgs;
+			sourceTree = "<group>";
+		};
 		23BA6E1219D75BDB003300FB = {
 			isa = PBXGroup;
 			children = (
@@ -114,7 +153,11 @@
 			children = (
 				23BA6E5719D7CD3C003300FB /* Sonidos */,
 				23BA6E4C19D76BE5003300FB /* APTableViewController.h */,
+				0A90545519D7B27D00172417 /* ViewController.m */,
+				0A90545619D7B27D00172417 /* ViewController.xib */,
+				0A90545419D7B27C00172417 /* ViewController.h */,
 				23BA6E4D19D76BE5003300FB /* APTableViewController.m */,
+				0A90544C19D7AC7C00172417 /* imgs */,
 				23BA6E5119D7A22C003300FB /* APInstrumentViewController.h */,
 				23BA6E5219D7A22C003300FB /* APInstrumentViewController.m */,
 				23BA6E5319D7A22C003300FB /* APInstrumentViewController.xib */,
@@ -256,6 +299,8 @@
 				23BA6E7E19D7E50B003300FB /* Palitos.caf in Resources */,
 				23BA6E7719D7E01D003300FB /* Tumbador.caf in Resources */,
 				23BA6E2F19D75BDB003300FB /* LaunchScreen.xib in Resources */,
+				0A90546619D7CA5D00172417 /* palitos.png in Resources */,
+				0A90545819D7B27D00172417 /* ViewController.xib in Resources */,
 				23BA6E2C19D75BDB003300FB /* Images.xcassets in Resources */,
 				23BA6E7B19D7E501003300FB /* Maracas.caf in Resources */,
 				23BA6E7F19D7E50B003300FB /* Requinto1.caf in Resources */,
@@ -280,6 +325,7 @@
 				23BA6E4F19D76BE5003300FB /* APTableViewController.m in Sources */,
 				23BA6E2419D75BDB003300FB /* AppDelegate.m in Sources */,
 				23BA6E2119D75BDB003300FB /* main.m in Sources */,
+				0A90545719D7B27D00172417 /* ViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -398,7 +444,7 @@
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = AirParranda/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -413,7 +459,7 @@
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = AirParranda/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -472,6 +518,7 @@
 				23BA6E4019D75BDB003300FB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		23BA6E4119D75BDB003300FB /* Build configuration list for PBXNativeTarget "AirParrandaTests" */ = {
 			isa = XCConfigurationList;
@@ -480,6 +527,7 @@
 				23BA6E4319D75BDB003300FB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
