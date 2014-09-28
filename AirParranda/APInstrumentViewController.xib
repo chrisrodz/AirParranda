@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6245" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6245" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
-        <deployment defaultVersion="1808" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
     </dependencies>
     <objects>
@@ -28,7 +27,7 @@
                 <constraint firstAttribute="centerX" secondItem="vMy-sE-0kv" secondAttribute="centerX" constant="-0.5" id="Idb-lh-Trp"/>
                 <constraint firstAttribute="centerY" secondItem="vMy-sE-0kv" secondAttribute="centerY" constant="0.5" id="ahv-CK-BOt"/>
             </constraints>
-            <point key="canvasLocation" x="433" y="388"/>
+            <point key="canvasLocation" x="564" y="381"/>
         </view>
     </objects>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

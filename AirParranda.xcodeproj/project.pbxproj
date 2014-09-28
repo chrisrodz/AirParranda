@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A90544E19D7ACBB00172417 /* labtocat.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A90544D19D7ACBB00172417 /* labtocat.png */; };
+		0A90545719D7B27D00172417 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A90545519D7B27D00172417 /* ViewController.m */; };
+		0A90545819D7B27D00172417 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A90545619D7B27D00172417 /* ViewController.xib */; };
 		23BA6E2119D75BDB003300FB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 23BA6E2019D75BDB003300FB /* main.m */; };
 		23BA6E2419D75BDB003300FB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 23BA6E2319D75BDB003300FB /* AppDelegate.m */; };
 		23BA6E2C19D75BDB003300FB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23BA6E2B19D75BDB003300FB /* Images.xcassets */; };
@@ -32,6 +35,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0A90544D19D7ACBB00172417 /* labtocat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = labtocat.png; path = ../../../Downloads/CoolPics/labtocat.png; sourceTree = "<group>"; };
+		0A90545419D7B27C00172417 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		0A90545519D7B27D00172417 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		0A90545619D7B27D00172417 /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
 		23BA6E1B19D75BDB003300FB /* AirParranda.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AirParranda.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		23BA6E1F19D75BDB003300FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		23BA6E2019D75BDB003300FB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -74,6 +81,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0A90544C19D7AC7C00172417 /* imgs */ = {
+			isa = PBXGroup;
+			children = (
+				0A90544D19D7ACBB00172417 /* labtocat.png */,
+				0A90545419D7B27C00172417 /* ViewController.h */,
+				0A90545519D7B27D00172417 /* ViewController.m */,
+				0A90545619D7B27D00172417 /* ViewController.xib */,
+			);
+			name = imgs;
+			sourceTree = "<group>";
+		};
 		23BA6E1219D75BDB003300FB = {
 			isa = PBXGroup;
 			children = (
@@ -100,6 +118,7 @@
 			children = (
 				23BA6E4C19D76BE5003300FB /* APTableViewController.h */,
 				23BA6E4D19D76BE5003300FB /* APTableViewController.m */,
+				0A90544C19D7AC7C00172417 /* imgs */,
 				23BA6E5119D7A22C003300FB /* APInstrumentViewController.h */,
 				23BA6E5219D7A22C003300FB /* APInstrumentViewController.m */,
 				23BA6E5319D7A22C003300FB /* APInstrumentViewController.xib */,
@@ -219,9 +238,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A90544E19D7ACBB00172417 /* labtocat.png in Resources */,
 				23BA6E5519D7A22C003300FB /* APInstrumentViewController.xib in Resources */,
 				23BA6E5019D76BE5003300FB /* APTableViewController.xib in Resources */,
 				23BA6E2F19D75BDB003300FB /* LaunchScreen.xib in Resources */,
+				0A90545819D7B27D00172417 /* ViewController.xib in Resources */,
 				23BA6E2C19D75BDB003300FB /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -244,6 +265,7 @@
 				23BA6E4F19D76BE5003300FB /* APTableViewController.m in Sources */,
 				23BA6E2419D75BDB003300FB /* AppDelegate.m in Sources */,
 				23BA6E2119D75BDB003300FB /* main.m in Sources */,
+				0A90545719D7B27D00172417 /* ViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -436,6 +458,7 @@
 				23BA6E4019D75BDB003300FB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		23BA6E4119D75BDB003300FB /* Build configuration list for PBXNativeTarget "AirParrandaTests" */ = {
 			isa = XCConfigurationList;
@@ -444,6 +467,7 @@
 				23BA6E4319D75BDB003300FB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

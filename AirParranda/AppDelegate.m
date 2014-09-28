@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import <MyoKit/MyoKit.h>
 #import "APTableViewController.h"
+#import "ViewController.h"
 
 @interface AppDelegate ()
 
@@ -23,7 +24,7 @@
     [TLMHub sharedHub];
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    UINavigationController *nc = [[UINavigationController alloc] initWithRootViewController:[[APTableViewController alloc] init]];
+    UINavigationController *nc = [[UINavigationController alloc] initWithRootViewController:[[ViewController alloc] init]];
     self.window.rootViewController = nc;
     [self.window makeKeyAndVisible];
     
