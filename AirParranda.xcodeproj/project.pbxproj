@@ -17,6 +17,8 @@
 		23BA6E4919D75F1E003300FB /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23BA6E4819D75F1E003300FB /* SystemConfiguration.framework */; };
 		23BA6E4F19D76BE5003300FB /* APTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23BA6E4D19D76BE5003300FB /* APTableViewController.m */; };
 		23BA6E5019D76BE5003300FB /* APTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23BA6E4E19D76BE5003300FB /* APTableViewController.xib */; };
+		23BA6E5419D7A22C003300FB /* APInstrumentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23BA6E5219D7A22C003300FB /* APInstrumentViewController.m */; };
+		23BA6E5519D7A22C003300FB /* APInstrumentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23BA6E5319D7A22C003300FB /* APInstrumentViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +48,9 @@
 		23BA6E4C19D76BE5003300FB /* APTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = APTableViewController.h; path = ../APTableViewController.h; sourceTree = "<group>"; };
 		23BA6E4D19D76BE5003300FB /* APTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = APTableViewController.m; path = ../APTableViewController.m; sourceTree = "<group>"; };
 		23BA6E4E19D76BE5003300FB /* APTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = APTableViewController.xib; path = ../APTableViewController.xib; sourceTree = "<group>"; };
+		23BA6E5119D7A22C003300FB /* APInstrumentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APInstrumentViewController.h; sourceTree = "<group>"; };
+		23BA6E5219D7A22C003300FB /* APInstrumentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APInstrumentViewController.m; sourceTree = "<group>"; };
+		23BA6E5319D7A22C003300FB /* APInstrumentViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = APInstrumentViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +100,9 @@
 			children = (
 				23BA6E4C19D76BE5003300FB /* APTableViewController.h */,
 				23BA6E4D19D76BE5003300FB /* APTableViewController.m */,
+				23BA6E5119D7A22C003300FB /* APInstrumentViewController.h */,
+				23BA6E5219D7A22C003300FB /* APInstrumentViewController.m */,
+				23BA6E5319D7A22C003300FB /* APInstrumentViewController.xib */,
 				23BA6E4E19D76BE5003300FB /* APTableViewController.xib */,
 				23BA6E2219D75BDB003300FB /* AppDelegate.h */,
 				23BA6E2319D75BDB003300FB /* AppDelegate.m */,
@@ -211,6 +219,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23BA6E5519D7A22C003300FB /* APInstrumentViewController.xib in Resources */,
 				23BA6E5019D76BE5003300FB /* APTableViewController.xib in Resources */,
 				23BA6E2F19D75BDB003300FB /* LaunchScreen.xib in Resources */,
 				23BA6E2C19D75BDB003300FB /* Images.xcassets in Resources */,
@@ -231,6 +240,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23BA6E5419D7A22C003300FB /* APInstrumentViewController.m in Sources */,
 				23BA6E4F19D76BE5003300FB /* APTableViewController.m in Sources */,
 				23BA6E2419D75BDB003300FB /* AppDelegate.m in Sources */,
 				23BA6E2119D75BDB003300FB /* main.m in Sources */,
