@@ -20,12 +20,12 @@
 		23BA6E5419D7A22C003300FB /* APInstrumentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23BA6E5219D7A22C003300FB /* APInstrumentViewController.m */; };
 		23BA6E5519D7A22C003300FB /* APInstrumentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23BA6E5319D7A22C003300FB /* APInstrumentViewController.xib */; };
 		23BA6E7119D7E01D003300FB /* Güiro.caf in Resources */ = {isa = PBXBuildFile; fileRef = 23BA6E6A19D7E01D003300FB /* Güiro.caf */; };
-		23BA6E7219D7E01D003300FB /* Maracas.caf in Resources */ = {isa = PBXBuildFile; fileRef = 23BA6E6B19D7E01D003300FB /* Maracas.caf */; };
-		23BA6E7319D7E01D003300FB /* Palitos.caf in Resources */ = {isa = PBXBuildFile; fileRef = 23BA6E6C19D7E01D003300FB /* Palitos.caf */; };
-		23BA6E7419D7E01D003300FB /* Requinto1.caf in Resources */ = {isa = PBXBuildFile; fileRef = 23BA6E6D19D7E01D003300FB /* Requinto1.caf */; };
 		23BA6E7519D7E01D003300FB /* Requinto2.caf in Resources */ = {isa = PBXBuildFile; fileRef = 23BA6E6E19D7E01D003300FB /* Requinto2.caf */; };
 		23BA6E7619D7E01D003300FB /* Seguidor.caf in Resources */ = {isa = PBXBuildFile; fileRef = 23BA6E6F19D7E01D003300FB /* Seguidor.caf */; };
 		23BA6E7719D7E01D003300FB /* Tumbador.caf in Resources */ = {isa = PBXBuildFile; fileRef = 23BA6E7019D7E01D003300FB /* Tumbador.caf */; };
+		23BA6E7B19D7E501003300FB /* Maracas.caf in Resources */ = {isa = PBXBuildFile; fileRef = 23BA6E7A19D7E501003300FB /* Maracas.caf */; };
+		23BA6E7E19D7E50B003300FB /* Palitos.caf in Resources */ = {isa = PBXBuildFile; fileRef = 23BA6E7C19D7E50B003300FB /* Palitos.caf */; };
+		23BA6E7F19D7E50B003300FB /* Requinto1.caf in Resources */ = {isa = PBXBuildFile; fileRef = 23BA6E7D19D7E50B003300FB /* Requinto1.caf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,12 +59,12 @@
 		23BA6E5219D7A22C003300FB /* APInstrumentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APInstrumentViewController.m; sourceTree = "<group>"; };
 		23BA6E5319D7A22C003300FB /* APInstrumentViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = APInstrumentViewController.xib; sourceTree = "<group>"; };
 		23BA6E6A19D7E01D003300FB /* Güiro.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Güiro.caf"; sourceTree = "<group>"; };
-		23BA6E6B19D7E01D003300FB /* Maracas.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Maracas.caf; sourceTree = "<group>"; };
-		23BA6E6C19D7E01D003300FB /* Palitos.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Palitos.caf; sourceTree = "<group>"; };
-		23BA6E6D19D7E01D003300FB /* Requinto1.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Requinto1.caf; sourceTree = "<group>"; };
 		23BA6E6E19D7E01D003300FB /* Requinto2.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Requinto2.caf; sourceTree = "<group>"; };
 		23BA6E6F19D7E01D003300FB /* Seguidor.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Seguidor.caf; sourceTree = "<group>"; };
 		23BA6E7019D7E01D003300FB /* Tumbador.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Tumbador.caf; sourceTree = "<group>"; };
+		23BA6E7A19D7E501003300FB /* Maracas.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Maracas.caf; sourceTree = "<group>"; };
+		23BA6E7C19D7E50B003300FB /* Palitos.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Palitos.caf; sourceTree = "<group>"; };
+		23BA6E7D19D7E50B003300FB /* Requinto1.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Requinto1.caf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,10 +157,10 @@
 		23BA6E5719D7CD3C003300FB /* Sonidos */ = {
 			isa = PBXGroup;
 			children = (
+				23BA6E7A19D7E501003300FB /* Maracas.caf */,
+				23BA6E7C19D7E50B003300FB /* Palitos.caf */,
+				23BA6E7D19D7E50B003300FB /* Requinto1.caf */,
 				23BA6E6A19D7E01D003300FB /* Güiro.caf */,
-				23BA6E6B19D7E01D003300FB /* Maracas.caf */,
-				23BA6E6C19D7E01D003300FB /* Palitos.caf */,
-				23BA6E6D19D7E01D003300FB /* Requinto1.caf */,
 				23BA6E6E19D7E01D003300FB /* Requinto2.caf */,
 				23BA6E6F19D7E01D003300FB /* Seguidor.caf */,
 				23BA6E7019D7E01D003300FB /* Tumbador.caf */,
@@ -248,17 +248,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				23BA6E7319D7E01D003300FB /* Palitos.caf in Resources */,
 				23BA6E5519D7A22C003300FB /* APInstrumentViewController.xib in Resources */,
 				23BA6E7619D7E01D003300FB /* Seguidor.caf in Resources */,
 				23BA6E7519D7E01D003300FB /* Requinto2.caf in Resources */,
 				23BA6E7119D7E01D003300FB /* Güiro.caf in Resources */,
 				23BA6E5019D76BE5003300FB /* APTableViewController.xib in Resources */,
+				23BA6E7E19D7E50B003300FB /* Palitos.caf in Resources */,
 				23BA6E7719D7E01D003300FB /* Tumbador.caf in Resources */,
 				23BA6E2F19D75BDB003300FB /* LaunchScreen.xib in Resources */,
-				23BA6E7419D7E01D003300FB /* Requinto1.caf in Resources */,
 				23BA6E2C19D75BDB003300FB /* Images.xcassets in Resources */,
-				23BA6E7219D7E01D003300FB /* Maracas.caf in Resources */,
+				23BA6E7B19D7E501003300FB /* Maracas.caf in Resources */,
+				23BA6E7F19D7E50B003300FB /* Requinto1.caf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
