@@ -9,9 +9,11 @@
 #import "APInstrumentViewController.h"
 #import <MyoKit/MyoKit.h>
 @import AudioToolbox;
+@import AVFoundation;
 
 @interface APInstrumentViewController ()
 
+@property (strong, nonatomic) NSURL *parrandaURL;
 @property (assign) SystemSoundID parrandaSound;
 
 @end
@@ -23,7 +25,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    
     self.instrumentName.text = self.name;
 
     
@@ -43,8 +45,8 @@
 //                                               object:nil];
     NSString *parrandaPath = [[NSBundle mainBundle]
                               pathForResource:self.name ofType:@"caf"];
-    NSURL *parrandaURL = [NSURL fileURLWithPath:parrandaPath];
-    AudioServicesCreateSystemSoundID((__bridge CFURLRef)parrandaURL, &_parrandaSound);
+    self.parrandaURL = [NSURL fileURLWithPath:parrandaPath];
+    AudioServicesCreateSystemSoundID((__bridge CFURLRef)self.parrandaURL, &_parrandaSound);
     
 }
 
@@ -67,6 +69,7 @@
         if (magnitude > 1.1) {
             AudioServicesPlaySystemSound(self.parrandaSound);
             NSLog(@"%f", magnitude);
+            NSLog(@"%@", self.musicPlayers);
         }
     } else if ([self.name isEqual:@"Güiro"]) {
         if (magnitude > 1.3) {
@@ -107,10 +110,31 @@
             // Changes helloLabel's font to Helvetica Neue when the user is in a rest or unknown pose.
             NSLog(@"Hello Myo");
             break;
-        case TLMPoseTypeFist:
+        case TLMPoseTypeFist: {
             // Changes helloLabel's font to Noteworthy when the user is in a fist pose.
             NSLog(@"Fist");
+            NSError *error;
+            AVAudioPlayer *newPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:self.parrandaURL error:&error];
+            [self.musicPlayers addObject:newPlayer];
+            newPlayer.enableRate = YES;
+            [newPlayer setNumberOfLoops:-1];
+            if ([self.name isEqual:@"Palitos"]) {
+                [newPlayer setRate:2.5];
+            } else if ([self.name isEqual:@"Güiro"]) {
+                [newPlayer setRate:1.5];
+            } else if ([self.name isEqual:@"Maracas"]) {
+                [newPlayer setRate:1.0];
+            } else if ([self.name isEqual:@"Tumbador"]) {
+                [newPlayer setRate:1.0];
+            } else if ([self.name isEqual:@"Seguidor"]) {
+                [newPlayer setRate:1.0];
+            } else if ([self.name isEqual:@"Requinto1"]) {
+
+            }
+            [newPlayer prepareToPlay];
+            [newPlayer play];
             break;
+        }
         case TLMPoseTypeWaveIn:
             // Changes helloLabel's font to Courier New when the user is in a wave in pose.
             NSLog(@"Wave In");
@@ -119,13 +143,15 @@
             // Changes helloLabel's font to Snell Roundhand when the user is in a wave out pose.
             NSLog(@"Wave Out");
             break;
-        case TLMPoseTypeFingersSpread:
-            // Changes helloLabel's font to Chalkduster when the user is in a fingers spread pose.
-            NSLog(@"Fingers Spread");
-            break;
         case TLMPoseTypeThumbToPinky:
             // Changes helloLabel's font to Superclarendon when the user is in a twist in pose.
             NSLog(@"Thumb to Pinky");
+            break;
+        case TLMPoseTypeFingersSpread:
+            NSLog(@"Fingers Spread");
+            for (AVAudioPlayer *player in self.musicPlayers) {
+                [player stop];
+            }
             break;
     }
 }

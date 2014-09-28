@@ -14,5 +14,6 @@
 
 @property (strong, nonatomic) NSString *name;
 @property (weak, nonatomic) IBOutlet UILabel *instrument;
+@property (weak, nonatomic) NSMutableArray *musicPlayers;
 
 @end

@@ -21,6 +21,7 @@
 @property (weak, nonatomic) IBOutlet UIButton *banjo;
 @property (weak, nonatomic) IBOutlet UIButton *redoble;
 @property (weak, nonatomic) IBOutlet UIButton *campana;
+@property (strong, nonatomic) NSMutableArray *audioPlayers;
 
 @end
 
@@ -31,6 +32,7 @@
     APInstrumentViewController *ivc = [[APInstrumentViewController alloc] init];
     
     ivc.name = @"Requinto1";
+    ivc.musicPlayers = self.audioPlayers;
     UIImage *image = [UIImage imageNamed:@"requinto.png"];
     UIImageView *imageView = [[UIImageView alloc] initWithImage:image];
     [imageView setFrame:CGRectMake(100, 200, 100, 100)];
@@ -42,6 +44,7 @@
     APInstrumentViewController *ivc = [[APInstrumentViewController alloc] init];
     
     ivc.name = @"Palitos";
+    ivc.musicPlayers = self.audioPlayers;
     [ivc.instrument setText:@"palitos"];
     UIImage *image = [UIImage imageNamed:@"palitos.png"];
     UIImageView *imageView = [[UIImageView alloc] initWithImage:image];
@@ -54,6 +57,7 @@
     APInstrumentViewController *ivc = [[APInstrumentViewController alloc] init];
     
     ivc.name = @"Maracas";
+    ivc.musicPlayers = self.audioPlayers;
     UIImage *image = [UIImage imageNamed:@"maracas.png"];
     UIImageView *imageView = [[UIImageView alloc] initWithImage:image];
     [imageView setFrame:CGRectMake(100, 200, 100, 100)];
@@ -64,6 +68,7 @@
     APInstrumentViewController *ivc = [[APInstrumentViewController alloc] init];
     
     ivc.name = @"Güiro";
+    ivc.musicPlayers = self.audioPlayers;
     UIImage *image = [UIImage imageNamed:@"guiro.png"];
     UIImageView *imageView = [[UIImageView alloc] initWithImage:image];
     [imageView setFrame:CGRectMake(100, 200, 100, 100)];
@@ -74,6 +79,7 @@
     APInstrumentViewController *ivc = [[APInstrumentViewController alloc] init];
     
     ivc.name = @"Seguidor";
+    ivc.musicPlayers = self.audioPlayers;
     UIImage *image = [UIImage imageNamed:@"seguidor.png"];
     UIImageView *imageView = [[UIImageView alloc] initWithImage:image];
     [imageView setFrame:CGRectMake(100, 200, 100, 100)];
@@ -84,6 +90,7 @@
     APInstrumentViewController *ivc = [[APInstrumentViewController alloc] init];
     
     ivc.name = @"Tumbador";
+    ivc.musicPlayers = self.audioPlayers;
     UIImage *image = [UIImage imageNamed:@"tumbador.png"];
     UIImageView *imageView = [[UIImageView alloc] initWithImage:image];
     [imageView setFrame:CGRectMake(100, 200, 100, 100)];
@@ -106,6 +113,8 @@
     self.connect.tintColor = [UIColor whiteColor]; 
     self.navigationItem.rightBarButtonItem = self.connect;
     self.navigationItem.title = @"AirParranda";
+    [self.navigationController.navigationBar setTintColor:[UIColor whiteColor]];
+    self.audioPlayers = [[NSMutableArray alloc] init];
 }
 
 - (void)didReceiveMemoryWarning {
